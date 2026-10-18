@@ -71,3 +71,56 @@ export const productSearch = {
     { label: "Squatting Pans", count: 12 },
   ],
 } as const;
+
+export const categoriesContent = {
+  eyebrow: "Shop by category",
+  description:
+    "From sculpted table-top basins to export-grade closets — every OCENO piece shares the same vitreous body, glaze and QC.",
+  cta: { label: "View all products", href: "/products" },
+  items: [
+    {
+      id: "table-top-basins",
+      name: "Table-Top Basins",
+      count: 48,
+      href: "/products/table-top-basins",
+      image: "categoryTableTop",
+      media: "product",
+      shadow: "categoryFloorShadow",
+    },
+    {
+      id: "designer-art-basins",
+      name: "Designer Art Basins",
+      count: 36,
+      href: "/products/designer-art-basins",
+      image: "categoryDesignerArt",
+      media: "product",
+      shadow: "categoryFloorShadow",
+    },
+    {
+      id: "pedestal-basins",
+      name: "Pedestal Basins",
+      count: 22,
+      href: "/products/pedestal-basins",
+      image: "categoryPedestal",
+      media: "product",
+      shadow: "categoryFloorShadow",
+    },
+    {
+      id: "water-closets",
+      name: "Water Closets",
+      count: 18,
+      href: "/products/water-closets",
+      image: "categoryWaterClosets",
+      media: "photo",
+    },
+    {
+      id: "squatting-pans",
+      name: "Squatting Pans",
+      count: 12,
+      href: "/products/squatting-pans",
+      image: "categorySquatting",
+      media: "product",
+      shadow: "categoryFloorShadowAlt",
+    },
+  ],
+} as const;

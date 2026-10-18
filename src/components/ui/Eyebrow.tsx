@@ -14,7 +14,7 @@ export default function Eyebrow({ children, tone = "dark", className }: EyebrowP
       <p
         className={cn(
           "font-manrope-bold text-[12px] leading-[16px] font-bold tracking-[1.92px] uppercase",
-          tone === "dark" ? "text-white" : "text-oceno-ink-strong",
+          tone === "dark" ? "text-white" : "text-oceno-blue",
         )}
       >
         {children}

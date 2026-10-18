@@ -1,11 +1,13 @@
 import type { ComponentPropsWithoutRef, ReactNode } from "react";
 import { cn } from "@/lib/cn";
 
-export type ButtonVariant = "primary" | "outline-light" | "link";
+export type ButtonVariant = "primary" | "outline" | "outline-light" | "link";
 
 const variants: Record<ButtonVariant, string> = {
   primary:
     "px-[26px] py-[14px] bg-oceno-blue text-white hover:bg-oceno-blue-hover hover:shadow-[0_8px_20px_-8px_rgba(11,77,245,0.6)]",
+  outline:
+    "px-[26px] py-[14px] border-[1.25px] border-oceno-muted text-oceno-deep hover:border-oceno-deep hover:bg-oceno-surface",
   "outline-light":
     "px-[26px] py-[14px] border-[1.25px] border-white/35 text-white hover:border-white/70 hover:bg-white/[0.06]",
   link: "py-[6px] text-oceno-blue hover:text-oceno-blue-hover",

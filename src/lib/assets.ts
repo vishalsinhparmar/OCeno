@@ -25,4 +25,15 @@ export const assets = {
   thumbFloorShadow: `${assetPathPrefix}/e095e.svg`,
   heroSwatches: `${assetPathPrefix}/5988f.svg`,
   productMarina: `${assetPathPrefix}/05e95.png`,
+  iconArrowRightDark: `${assetPathPrefix}/9638f.svg`,
+  iconArrowUpRight: `${assetPathPrefix}/a849a.svg`,
+  categoryFloorShadow: `${assetPathPrefix}/aa8f3.svg`,
+  categoryFloorShadowAlt: `${assetPathPrefix}/4442f.svg`,
+  categoryTableTop: `${assetPathPrefix}/1399a.png`,
+  categoryDesignerArt: `${assetPathPrefix}/545e6.png`,
+  categoryPedestal: `${assetPathPrefix}/dd897.png`,
+  categoryWaterClosets: `${assetPathPrefix}/16578.png`,
+  categorySquatting: `${assetPathPrefix}/be45c.png`,
 } as const;
+
+export type AssetKey = keyof typeof assets;
