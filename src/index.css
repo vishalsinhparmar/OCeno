@@ -1,6 +1,14 @@
 @import 'tailwindcss';
 
-/* Manrope faces from the OCENO Figma file (resolved via figma fonts resolve). */
+/* Font faces from the OCENO Figma file (resolved via figma fonts resolve). */
+@font-face {
+  font-family: "Manrope:Regular";
+  src: url("https://static.figma.com/font/Manrope_wght__1") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 @font-face {
   font-family: "Manrope:Medium";
   src: url("https://static.figma.com/font/Manrope_wght__1") format("woff2");
@@ -17,20 +25,66 @@
   font-display: swap;
 }
 
-/* OCENO design tokens, taken from the Figma header frame. */
+@font-face {
+  font-family: "Manrope:Bold";
+  src: url("https://static.figma.com/font/Manrope_wght__1") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fraunces:Light";
+  src: url("https://static.figma.com/font/Fraunces_SOFT_WONK_opsz_wght__1") format("woff2");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fraunces:Regular";
+  src: url("https://static.figma.com/font/Fraunces_SOFT_WONK_opsz_wght__1") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fraunces:Light Italic";
+  src: url("https://static.figma.com/font/Fraunces-Italic_SOFT_WONK_opsz_wght__1") format("woff2");
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+}
+
+/* OCENO design tokens, taken from the Figma file. */
 @theme {
+  --font-manrope-regular: "Manrope:Regular", ui-sans-serif, system-ui, sans-serif;
   --font-manrope-medium: "Manrope:Medium", ui-sans-serif, system-ui, sans-serif;
   --font-manrope-semibold: "Manrope:SemiBold", ui-sans-serif, system-ui, sans-serif;
+  --font-manrope-bold: "Manrope:Bold", ui-sans-serif, system-ui, sans-serif;
+  --font-fraunces-light: "Fraunces:Light", ui-serif, Georgia, serif;
+  --font-fraunces-regular: "Fraunces:Regular", ui-serif, Georgia, serif;
+  --font-fraunces-light-italic: "Fraunces:Light Italic", ui-serif, Georgia, serif;
 
   --color-oceno-navy: #050b1f;
+  --color-oceno-deep: #08132e;
+  --color-oceno-deep-line: #16295c;
   --color-oceno-blue: #0b4df5;
   --color-oceno-blue-hover: #0a41d1;
+  --color-oceno-blue-bright: #3d72ff;
   --color-oceno-red: #ee1c25;
+  --color-oceno-red-soft: #fde4e5;
   --color-oceno-ink: #3a4458;
   --color-oceno-ink-strong: #081321;
+  --color-oceno-slate: #5f6b80;
+  --color-oceno-subtle: #8d96a8;
   --color-oceno-muted: #c3cad6;
   --color-oceno-line: #dee3eb;
+  --color-oceno-surface: #f6f8fb;
   --color-oceno-whatsapp: #25d366;
+
+  --shadow-oceno-float: 0px 4px 12px 0px rgba(8, 19, 46, 0.06), 0px 24px 64px -8px rgba(8, 19, 46, 0.16);
 }
 
 @layer base {
@@ -46,3 +100,4 @@
     background: #fff;
   }
 }
+
