@@ -101,3 +101,13 @@
   }
 }
 
+
+/* Hero product slider autoplay progress; pausing the animation also pauses autoplay. */
+@keyframes oceno-slide-progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
