@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+/* Manrope faces from the OCENO Figma file (resolved via figma fonts resolve). */
+@font-face {
+  font-family: "Manrope:Medium";
+  src: url("https://static.figma.com/font/Manrope_wght__1") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope:SemiBold";
+  src: url("https://static.figma.com/font/Manrope_wght__1") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+/* OCENO design tokens, taken from the Figma header frame. */
+@theme {
+  --font-manrope-medium: "Manrope:Medium", ui-sans-serif, system-ui, sans-serif;
+  --font-manrope-semibold: "Manrope:SemiBold", ui-sans-serif, system-ui, sans-serif;
+
+  --color-oceno-navy: #050b1f;
+  --color-oceno-blue: #0b4df5;
+  --color-oceno-blue-hover: #0a41d1;
+  --color-oceno-red: #ee1c25;
+  --color-oceno-ink: #3a4458;
+  --color-oceno-ink-strong: #081321;
+  --color-oceno-muted: #c3cad6;
+  --color-oceno-line: #dee3eb;
+  --color-oceno-whatsapp: #25d366;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: var(--font-manrope-medium);
+    font-weight: 500;
+    color: var(--color-oceno-ink);
+    background: #fff;
+  }
+}
